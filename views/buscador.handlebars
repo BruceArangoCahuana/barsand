@@ -1,0 +1,30 @@
+<div class="container">
+      
+        {{#if trabajadores.length}}
+            <h2>
+                Resultado de la busqueda:{{trabajadores.nombre}}
+            </h2>
+           <div class="mini-card">
+                    {{#each trabajadores}}
+                    <div class="card-perfiles">
+                        <img src={{imagen}} alt="">
+                        
+                        <div class="texto-mini">
+                            <h1>{{nombre}}</h1>
+                            <h3>{{ocupacion}} <i class="fas fa-user-tie"></i></h3>
+                            <div class="skill">
+                                <p class="lugar">{{lugar}} <i class="fas fa-map-marker-alt"></i></p>
+                                <p class="zona">{{zona}}</p>
+                            </div>
+                            <a href="/representante/{{_id}}">
+                                <p> ver perfil</p>
+                                <i class="fas fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                    {{/each}}
+            </div>
+        {{/if}}
+      
+        <a href="http://api.whatsapp.com/send?phone=" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+    </div>

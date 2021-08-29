@@ -1,0 +1,23 @@
+{
+  "name": "card-barsand",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index",
+    "start":"node ./index.js"
+  },
+  "author": "Brandon Arango",
+  "license": "ISC",
+  "dependencies": {
+    "connect-mongo": "^3.2.0",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.3",
+    "express-session": "^1.17.2",
+    "http-errors": "^1.7.2",
+    "mongoose": "^5.13.7",
+    "nodemon": "^2.0.12"
+  }
+}
