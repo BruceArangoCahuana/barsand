@@ -46,8 +46,8 @@ app.use((error,req,res,next)=>{
     });
 })
 //heroku asigne el puerto
-const host = '0.0.0.0';
-const port = process.env.PUERTO; 
+const host  = process.env.HOST || '0.0.0.0';
+const port = process.env.PUERTO || 80;
 app.listen( port,host,()=>{
-    console.log("Servidor listo");
+    console.log("LISTO");
 })
